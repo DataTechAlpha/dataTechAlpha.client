@@ -61,12 +61,12 @@ const LoginForm = () => {
             Student
           </label>
 
-          <label className={` py-2 px-5 rounded-full  cursor-pointer transition-all duration-200
+          {/* <label className={` py-2 px-5 rounded-full  cursor-pointer transition-all duration-200
             ${role === 'Instructor' ? 'bg-richblack-900 text-richblack-5' : 'bg-transparent text-richblack-200 '}
           `}>
             <input type="radio" name='role' value={'Instructor'} className={`appearance-none`} onClick={handleOnChange} />
             Instructor
-          </label>
+          </label> */}
 
         </div>
 

@@ -15,6 +15,10 @@ const navbarLinks = [
     title: "Contact Us",
     path: "/contact",
   },
+  {
+    title: "Carrer",
+    path: "/career",
+  },
 ];
 
 module.exports = navbarLinks

@@ -29,7 +29,7 @@ const ContactUsForm = () => {
 
   return (
     <div className='' >
-      <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-7' >
+      <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-7' netlify >
         <div className='flex flex-col md:flex-row gap-5' >
           <label className='w-full'>
             <p className='label-style ' >First Name <sup className='text-pink-200' > *</sup></p>

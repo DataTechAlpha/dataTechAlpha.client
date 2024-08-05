@@ -5,6 +5,7 @@ const footerLinks = [
       { title: 'About', link: '/about' },
       { title: 'Careers', link: '/careers' },
       { title: 'Affiliates', link: '/affiliates' },
+      { title: 'Terms and policy', link: '/termsandpolicy' },
     ]
   },
 

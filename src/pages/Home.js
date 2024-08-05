@@ -173,7 +173,7 @@ const Home = () => {
             </div>
 
             <div className='flex flex-col gap-10 w-[40%] items-start'>
-              <p>The modern StudyNotion is the dictates its own terms. Today, to be a competitive specialist requires more than professional skills.</p>
+              <p>The modern Data Tech Alpha  is the dictates its own terms. Today, to be a competitive specialist requires more than professional skills.</p>
               <CTAButton active={true} linkto={'/signup'} >
                 Learn More
               </CTAButton>

@@ -41,7 +41,7 @@ const About = () => {
           </h1>
 
           <p className='mx-auto lg:w-[70%] mt-3 text-center font-medium text-richblack-300' >
-            StudyNotion is at the forefront of driving innovation in online education. We're passionate about creating a brighter future by offering cutting-edge courses, leveraging emerging technologies, and nurturing a vibrant learning community.
+          Data Tech Alpha is at the forefront of driving innovation in online education. We're passionate about creating a brighter future by offering cutting-edge courses, leveraging emerging technologies, and nurturing a vibrant learning community.
           </p>
 
           <div className='sm:h-[70px] mt-10 lg:h-[150px]' ></div>

@@ -33,11 +33,11 @@ const Footer = () => {
               </Link>
               <FooterCard data={footerLinks[0]} />
               <div className='flex gap-3 text-lg text-richblack-400 -mt-5'>
-                <Link to={'https://www.linkedin.com/in/sunny8080/'} ><FaLinkedin /></Link>
-                <Link to={'https://twitter.com/sunny8080_'} ><FaTwitter /></Link>
-                <Link to={'https://www.youtube.com/'} ><FaYoutube /></Link>
-                <Link to={'https://www.facebook.com/sunny80801/'} ><FaFacebook /></Link>
-                <Link to={'https://www.instagram.com/sunny8080_/'} ><FaInstagram /></Link>
+                <Link to={'https://www.linkedin.com/in/datatech-alpha-84a364319/'} ><FaLinkedin /></Link>
+                <Link to={'https://twitter.com/'} ><FaTwitter /></Link>
+                <Link to={'https://www.youtube.com/@Datatechalpha'} ><FaYoutube /></Link>
+                <Link to={'https://www.facebook.com/'} ><FaFacebook /></Link>
+                <Link to={'https://www.instagram.com/'} ><FaInstagram /></Link>
               </div>
             </div>
 
@@ -83,7 +83,7 @@ const Footer = () => {
 
 
           <div className='text-center' >
-            Made with ❤️ Sunny8080 © 2023 StudyNotion
+            © 2023 Data Tech Alpha
           </div>
         </div>
       </div>

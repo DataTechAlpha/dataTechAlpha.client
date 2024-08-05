@@ -4,7 +4,7 @@ const learningGridData = [
     heading: "World-Class Learning for",
     highlightText: "Anyone, Anywhere",
     description:
-      "StudyNotion partners with more than 275+ leading universities and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide.",
+      "Data Tech Alpha partners with more than 275+ leading universities and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide.",
     BtnText: "Learn More",
     BtnLink: "/",
   },
@@ -18,25 +18,25 @@ const learningGridData = [
     order: 2,
     heading: "Our Learning Methods",
     description:
-      "StudyNotion partners with more than 275+ leading universities and companies to bring",
+      "Data Tech Alpha  partners with more than 275+ leading universities and companies to bring",
   },
   {
     order: 3,
     heading: "Certification",
     description:
-      "StudyNotion partners with more than 275+ leading universities and companies to bring",
+      "Data Tech Alpha  partners with more than 275+ leading universities and companies to bring",
   },
   {
     order: 4,
     heading: `Rating "Auto-grading"`,
     description:
-      "StudyNotion partners with more than 275+ leading universities and companies to bring",
+      "Data Tech Alpha  partners with more than 275+ leading universities and companies to bring",
   },
   {
     order: 5,
     heading: "Ready to Work",
     description:
-      "StudyNotion partners with more than 275+ leading universities and companies to bring",
+      "Data Tech Alpha  partners with more than 275+ leading universities and companies to bring",
   },
 ];
 
