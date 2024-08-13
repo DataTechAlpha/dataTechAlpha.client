@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
+import Slider from 'react-slick';
 import HighlightedText from '../components/core/HomePage/HighlightedText'
 import TimelineSection from '../components/core/HomePage/TimelineSection'
 import LearningLanguageSection from '../components/core/HomePage/LearningLanguageSection'
@@ -13,7 +14,24 @@ import Footer from '../components/common/Footer'
 import ReviewsSlider from '../components/common/ReviewsSlider';
 import Spinner from '../components/common/Spinner';
 import { getAllReviews } from '../services/operations/otherServices';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import './Home.css'
 
+import companyLogo1 from '../assets/Companies/company-1.png';
+import companyLogo2 from '../assets/Companies/company-2.png';
+import companyLogo3 from '../assets/Companies/company-3.png';
+import companyLogo4 from '../assets/Companies/company-4.png';
+import companyLogo5 from '../assets/Companies/company-5.png';
+import companyLogo6 from '../assets/Companies/company-6.png';
+import companyLogo7 from '../assets/Companies/company-7.png';
+import companyLogo8 from '../assets/Companies/company-8.png';
+import companyLogo9 from '../assets/Companies/company-9.png';
+import companyLogo10 from '../assets/Companies/company-10.png';
+import companyLogo11 from '../assets/Companies/company-11.png';
+import companyLogo12 from '../assets/Companies/company-12.png';
+import companyLogo13 from '../assets/Companies/company-13.png';
+import companyLogo14 from '../assets/Companies/company-14.png';
 
 const Home = () => {
   const [reviews, setReviews] = useState([]);
@@ -31,6 +49,35 @@ const Home = () => {
     fetchAllReviews();
   }, [])
 
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
 
   return (
     <div className=' bg-richblack-900 flex flex-col font-inter min-h-screen w-screen'>
@@ -163,6 +210,26 @@ const Home = () => {
               </CTAButton>
             </div>
           </div>
+        </div>
+
+        {/* Carousel Section */}
+        <div className='my-10'>
+          <Slider {...settings}>
+            <img src={companyLogo1} alt='Company 1' className='logo-img'/>
+            <img src={companyLogo2} alt='Company 2' className='logo-img'/>
+            <img src={companyLogo3} alt='Company 3' className='logo-img'/>
+            <img src={companyLogo4} alt='Company 4' className='logo-img'/>
+            <img src={companyLogo5} alt='Company 5' className='logo-img'/>
+            <img src={companyLogo6} alt='Company 6' className='logo-img'/>
+            <img src={companyLogo7} alt='Company 7' className='logo-img'/>
+            <img src={companyLogo8} alt='Company 8' className='logo-img'/>
+            <img src={companyLogo9} alt='Company 9' className='logo-img'/>
+            <img src={companyLogo10} alt='Company 10' className='logo-img'/>
+            <img src={companyLogo11} alt='Company 11' className='logo-img'/>
+            <img src={companyLogo12} alt='Company 12' className='logo-img'/>
+            <img src={companyLogo13} alt='Company 13' className='logo-img'/>
+            <img src={companyLogo14} alt='Company 14' className='logo-img'/>
+          </Slider>
         </div>
 
         <div className='flex flex-col max-w-maxContent w-11/12 mt-5 md:mt-10 lg:mt-16 mx-auto gap-8 items-center justify-between' >
