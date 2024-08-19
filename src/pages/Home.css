@@ -1,6 +1,62 @@
-.logo-img {
-    width: '15%';
-    aspect-ratio : '4/3';
-    object-fit: 'contain';
-    mix-blend-mode: 'color-burn';
-}
+/* Home.css */
+
+/* Carousel Container */
+.carousel-container {
+    background: linear-gradient(90deg, #000428 0%, #004e92 100%);
+    padding: 10px 0;
+    text-align: center; /* Center the heading */
+  }
+  
+  /* Styling for the Heading */
+  .carousel-heading {
+    font-size: 2rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 20px; /* Space between heading and carousel */
+    color: #ffffff; /* White color for the heading */
+    font-family: 'Audiowide', cursive; /* Audiowide font */
+    text-align: center; /* Center-align the heading */
+  }
+  
+  /* Logo Image */
+  .logo-img {
+    width: 15%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+    padding: 0 15px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect on logos */
+  .logo-img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Slick slide transitions */
+  .slick-slide {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Slick dots customization */
+  .slick-dots li button:before {
+    color: #ffffff;
+    font-size: 10px;
+  }
+  
+  /* Slick prev/next button customization */
+  .slick-prev,
+  .slick-next {
+    z-index: 1;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    color: #ffffff;
+    font-size: 20px;
+  }
+  
+  .slick-prev:hover:before,
+  .slick-next:hover:before {
+    color: #ff0000;
+  }
+  

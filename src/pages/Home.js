@@ -52,32 +52,47 @@ const Home = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 5000, // Slow down the speed for smoother scrolling
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 0, // Set to 0 for continuous scrolling
+    cssEase: 'linear', // Ensures smooth, linear transition
+    pauseOnHover: false, // Prevent pause on hover
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1024, // For tablets and large screens
         settings: {
           slidesToShow: 4,
+          slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768, // For medium screens, like tablets and smaller laptops
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600, // For small screens, like mobile devices
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 480, // For very small screens, like very small phones
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
   };
+  
+  
+  
 
   return (
     <div className=' bg-richblack-900 flex flex-col font-inter min-h-screen w-screen'>
@@ -90,7 +105,7 @@ const Home = () => {
           <div className='rounded-full bg-richblack-800 text-richblack-200 mt-16 p-1 mx-auto w-fit drop-shadow-[0_1.5px_rgba(255,255,255,0.25)] group transition-all duration-200 hover:scale-95 hover:drop-shadow-none '>
             <Link to={'/signup'}>
               <div className=' flex flex-row items-center gap-2 font-bold rounded-full px-10 py-[5px] transition-all duration-200 group-hover:bg-richblack-900 '>
-                Become an instructor
+                Start you Carrer
                 <FaArrowRight />
               </div>
             </Link>
@@ -213,24 +228,26 @@ const Home = () => {
         </div>
 
         {/* Carousel Section */}
-        <div className='my-10'>
-          <Slider {...settings}>
-            <img src={companyLogo1} alt='Company 1' className='logo-img'/>
-            <img src={companyLogo2} alt='Company 2' className='logo-img'/>
-            <img src={companyLogo3} alt='Company 3' className='logo-img'/>
-            <img src={companyLogo4} alt='Company 4' className='logo-img'/>
-            <img src={companyLogo5} alt='Company 5' className='logo-img'/>
-            <img src={companyLogo6} alt='Company 6' className='logo-img'/>
-            <img src={companyLogo7} alt='Company 7' className='logo-img'/>
-            <img src={companyLogo8} alt='Company 8' className='logo-img'/>
-            <img src={companyLogo9} alt='Company 9' className='logo-img'/>
-            <img src={companyLogo10} alt='Company 10' className='logo-img'/>
-            <img src={companyLogo11} alt='Company 11' className='logo-img'/>
-            <img src={companyLogo12} alt='Company 12' className='logo-img'/>
-            <img src={companyLogo13} alt='Company 13' className='logo-img'/>
-            <img src={companyLogo14} alt='Company 14' className='logo-img'/>
-          </Slider>
-        </div>
+        <div className="carousel-container my-10">
+  <h2 className="carousel-heading">Get a chance to get placed in</h2>
+  <Slider {...settings}>
+    <img src={companyLogo1} alt='Company 1' className='logo-img'/>
+    <img src={companyLogo2} alt='Company 2' className='logo-img'/>
+    <img src={companyLogo3} alt='Company 3' className='logo-img'/>
+    <img src={companyLogo4} alt='Company 4' className='logo-img'/>
+    <img src={companyLogo5} alt='Company 5' className='logo-img'/>
+    <img src={companyLogo6} alt='Company 6' className='logo-img'/>
+    <img src={companyLogo7} alt='Company 7' className='logo-img'/>
+    <img src={companyLogo8} alt='Company 8' className='logo-img'/>
+    <img src={companyLogo9} alt='Company 9' className='logo-img'/>
+    <img src={companyLogo10} alt='Company 10' className='logo-img'/>
+    <img src={companyLogo11} alt='Company 11' className='logo-img'/>
+    <img src={companyLogo12} alt='Company 12' className='logo-img'/>
+    <img src={companyLogo13} alt='Company 13' className='logo-img'/>
+    <img src={companyLogo14} alt='Company 14' className='logo-img'/>
+  </Slider>
+</div>
+
 
         <div className='flex flex-col max-w-maxContent w-11/12 mt-5 md:mt-10 lg:mt-16 mx-auto gap-8 items-center justify-between' >
           <div className='flex flex-row mb-10 justify-between gap-10' >
