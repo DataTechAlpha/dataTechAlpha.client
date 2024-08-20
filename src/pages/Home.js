@@ -48,7 +48,7 @@ const Home = () => {
     }
     fetchAllReviews();
   }, [])
-
+// setting from crousle 
   const settings = {
     dots: false,
     infinite: true,
