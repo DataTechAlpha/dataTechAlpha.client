@@ -60,7 +60,7 @@ function App() {
         <Route path='/signup' element={<PublicRoute route={<SignUp />} />} />
         <Route path='/verify-email' element={<PublicRoute route={<VerifyEmail />} />} />
         <Route path='/forgot-password' element={<PublicRoute route={<ForgotPassword />} />} />
-        <Route path='/reset-password' element={<PublicRoute route={<ResetPassword />} />} />
+        <Route path='reset-password' element={<PublicRoute route={<ResetPassword />} />} />
 
 
         {/* Dashboard nested routes - Default route set to - dashboard/my-profile */}
